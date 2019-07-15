@@ -17,7 +17,7 @@ const forecast=(lat , long ,callback)=>{
         }
         else
         {
-            callback(undefined,"Temperature "+body.currently.temperature+"precipitation "+body.currently.precipProbability )
+            callback(undefined,"Temperature "+body.currently.temperature+"precipitation "+body.currently.precipProbability+"humidity"+body.currently.humidity);
         }
       
     }
